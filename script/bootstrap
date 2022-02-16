@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # bootstrap installs things.
+chsh -s $(which zsh)
 
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
@@ -28,7 +29,7 @@ fail () {
 }
 
 setup_gitconfig () {
-  if ! [ -f git/gitconfig.local.symlink ]
+  if ! [ -f git/gitconfig.symlink ]
   then
     info 'setup gitconfig'
 
