@@ -21,4 +21,48 @@ then
 
 fi
 
+
+# Install homebrew casks
+brew install --cask \
+    iterm2 \
+    atom \
+    jetbrains-toolbox
+
+# Install homebrew packages
+brew install bash-completion \
+             bat \
+             python \
+             the_silver_searcher \
+             tree \
+             fzf
+             git \
+             gpg \
+             grc \
+             htop \
+             hub \
+             gist \
+             nmap \
+             tmux \
+             vim \
+             jq \
+             yq
+
+brew tap jmespath/jmespath
+brew install jmespath/jmespath/jp
+
+# UNIX tools
+brew install findutils \
+             gnu-sed \
+             gnu-tar \
+             gnu-which \
+             gnutls  \
+             grep \
+             coreutils \
+             binutils \
+             diffutils \
+             gzip \
+             watch \
+             wget
+
 exit 0
+
